@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Importación de fuente de Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <!--Archivo de estilos-->
+    <link rel="stylesheet" href="style/css/style.css">
+
+    <title>Calculadora IMC</title>
+
+</head>
+<body>
+    
+    <header>
+        <h1>Calculadora IMC</h1>
+    </header>
+
+    <main>
+
+        <form>
+
+            <h2>Descubre tu indice de masa corporal</h2>
+
+            <div class="formElemento">
+
+                <label>Sexo</label>
+                <select name="sexo" id="sexo">
+                    <option value="sel">Selecciona tu sexo</option>
+                    <option value="mas">Masculino</option>
+                    <option value="fem">Femenino</option>
+                </select>
+
+            </div>
+            <div class="formElemento">
+                
+                <label>Edad</label>
+                <input type="number" name="edad" id="edad">
+
+            </div>
+            <div class="formElemento">
+    
+                <label>Peso (kg)</label>
+                <input type="number" name="peso" id="peso">
+
+            </div>
+            <div class="formElemento">
+    
+                <label>Altura (m)</label>
+                <input type="number" name="altura" id="altura">
+
+            </div>
+
+            <input type="submit" id="calcularIMC" value="Calcular IMC">
+
+        </form>
+
+        <aside>
+
+            <h2>Resultado</h2>
+
+            <p id="resultadoIMC"></p>
+
+            <div class="indicador">
+
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+
+            <div>
+                <div>
+                    <p id="resultadoPeso"></p>
+                </div>
+                <div id="tablaResultados">
+                    <div id="pesoBajo" class="categoria">
+                        <div></div>
+                        <p>Bajo peso</p>
+                    </div>
+                    <div id="pesoSaludable" class="categoria">
+                        <div></div>
+                        <p>Saludable</p>
+                    </div>
+                    <div id="pesoExceso" class="categoria">
+                        <div></div>
+                        <p>Exceso de peso</p>
+                    </div>
+                    <div id="pesoObeso" class="categoria">
+                        <div></div>
+                        <p>Obeso</p>
+                    </div>
+                </div>
+            </div>
+
+        </aside>
+
+    </main>
+
+    <script src="script/script.js"></script>
+
+</body>
+</html>

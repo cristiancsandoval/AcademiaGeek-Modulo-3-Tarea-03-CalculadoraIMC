@@ -1,0 +1,233 @@
+@charset "UTF-8";
+/*DOCUMENTO PRINCIPAL DE ESTILOS*/
+/*Desarrollado por medio del compilador de estilos SASS*/
+/*RESETEO GENERAL DE ESTILOS*/
+li, a, p {
+  text-decoration: none;
+  list-style-type: none;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Variables*/
+main #estadisticas #verEstadisticas, main form #calcularIMC {
+  height: 40px;
+  margin: 1rem;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #62D053;
+  color: white;
+  border: 1px solid #BBBBBB;
+  border-radius: 5px;
+}
+
+main #estadisticas, main form, main aside {
+  padding: 0.5rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F5F5F5;
+  border: 1px solid #BBBBBB;
+  border-radius: 5px;
+}
+
+/*Configuración de fuentes*/
+h1, h2, label, option, input, p {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-color: #62D053;
+}
+header h1 {
+  width: 100%;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 2.5px 2.5px #BBBBBB;
+}
+
+main {
+  background-color: white;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+main form, main aside {
+  width: 480px;
+}
+main form h2, main aside h2 {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  color: #BBBBBB;
+}
+main form .formElemento {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+main form .formElemento label, main form .formElemento select, main form .formElemento input {
+  font-size: 1.2rem;
+  width: 200px;
+  height: 30px;
+  margin: 0.3rem;
+}
+main form .formElemento select, main form .formElemento input {
+  border: 1px solid #BBBBBB;
+  border-radius: 5px;
+}
+main aside #resultadoIMC {
+  width: 350px;
+  height: 50px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-align: left;
+}
+main aside .colorAzul {
+  color: #336BFF;
+  padding-left: 5px;
+}
+main aside .colorVerde {
+  color: #62D053;
+  padding-left: 100px;
+}
+main aside .colorAmarillo {
+  color: #F5DD32;
+  padding-left: 190px;
+}
+main aside .colorRojo {
+  color: #FF2700;
+  padding-left: 280px;
+}
+main aside .indicador {
+  width: 350px;
+  height: 15px;
+  margin: 0.5rem 0;
+  display: flex;
+  flex-direction: row;
+}
+main aside .indicador span {
+  width: 50px;
+  height: 100%;
+}
+main aside .indicador span:nth-child(1) {
+  background-color: #336BFF;
+}
+main aside .indicador span:nth-child(2) {
+  background-image: linear-gradient(to right, #336BFF, #62D053);
+}
+main aside .indicador span:nth-child(3) {
+  background-color: #62D053;
+}
+main aside .indicador span:nth-child(4) {
+  background-image: linear-gradient(to right, #62D053, #F5DD32);
+}
+main aside .indicador span:nth-child(5) {
+  background-color: #F5DD32;
+}
+main aside .indicador span:nth-child(6) {
+  background-image: linear-gradient(to right, #F5DD32, #FF2700);
+}
+main aside .indicador span:nth-child(7) {
+  background-color: #FF2700;
+}
+main aside #resultadoPeso {
+  width: 100%;
+  height: 50px;
+  padding: 0.5rem;
+  font-size: 1.4rem;
+  text-align: center;
+  color: black;
+  border-top: 1px solid #BBBBBB;
+}
+main aside #tablaResultados {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main aside #tablaResultados .categoria {
+  width: 100%;
+  margin: 0.2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+main aside #tablaResultados .categoria p {
+  font-size: 1.1rem;
+  width: 100%;
+  padding: 0.2rem 0.5rem;
+  background-color: white;
+  border-radius: 5px;
+}
+main aside #tablaResultados .categoria div {
+  width: 60px;
+  height: 100%;
+}
+main aside #tablaResultados #pesoBajo {
+  background-color: #336BFF;
+  border: 1px solid #336BFF;
+  border-radius: 5px;
+}
+main aside #tablaResultados #pesoSaludable {
+  background-color: #62D053;
+  border: 1px solid #62D053;
+  border-radius: 5px;
+}
+main aside #tablaResultados #pesoExceso {
+  background-color: #F5DD32;
+  border: 1px solid #F5DD32;
+  border-radius: 5px;
+}
+main aside #tablaResultados #pesoObeso {
+  background-color: #FF2700;
+  border: 1px solid #FF2700;
+  border-radius: 5px;
+}
+main #estadisticas {
+  width: 990px;
+}
+main #estadisticas #infoEstadisticas {
+  width: 100%;
+  margin: 1rem 5%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main #estadisticas #infoEstadisticas p {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */
